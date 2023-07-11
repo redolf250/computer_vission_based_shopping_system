@@ -32,7 +32,7 @@ class Main(QMainWindow):
         self.ui_main.btn_home.clicked.connect(lambda: self.ui_main.stackedWidget.setCurrentWidget(self.ui_main.home))
         self.ui_main.btn_cart.clicked.connect(lambda: self.ui_main.stackedWidget.setCurrentWidget(self.ui_main.cart))
         self.ui_main.btn_update.clicked.connect(lambda: self.ui_main.stackedWidget.setCurrentWidget(self.ui_main.update))
-        self.ui_main.btn_option.clicked.connect(lambda: self.ui_main.stackedWidget.setCurrentWidget(self.ui_main.page))
+        self.ui_main.btn_option.clicked.connect(lambda: self.ui_main.stackedWidget.setCurrentWidget(self.ui_main.page)) 
 
     def resource_path(self,relative_path):
         path= os.path.abspath(os.path.join(os.path.dirname(__file__),relative_path)) 
