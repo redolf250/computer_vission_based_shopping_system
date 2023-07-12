@@ -18,13 +18,13 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QHBoxLayout,
     QLabel, QMainWindow, QPushButton, QSizePolicy,
     QStackedWidget, QVBoxLayout, QWidget)
-import icons_rc
+import asset_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(879, 572)
+        MainWindow.resize(879, 573)
         MainWindow.setStyleSheet(u"background-color: rgb(45, 45, 45);")
         self.mainWindow = QWidget(MainWindow)
         self.mainWindow.setObjectName(u"mainWindow")
@@ -83,6 +83,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon = QIcon()
+        icon.addFile(u"../resource/asset/home.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_home.setIcon(icon)
         self.btn_home.setIconSize(QSize(30, 30))
         self.btn_home.setFlat(True)
 
@@ -110,6 +113,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon1 = QIcon()
+        icon1.addFile(u"../resource/asset/shopping-cart.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_cart.setIcon(icon1)
         self.btn_cart.setIconSize(QSize(30, 30))
         self.btn_cart.setFlat(True)
 
@@ -137,6 +143,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon2 = QIcon()
+        icon2.addFile(u"../resource/asset/refresh-cw.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_update.setIcon(icon2)
         self.btn_update.setIconSize(QSize(30, 30))
         self.btn_update.setFlat(True)
 
@@ -164,6 +173,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon3 = QIcon()
+        icon3.addFile(u"../resource/asset/help-circle.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_option.setIcon(icon3)
         self.btn_option.setIconSize(QSize(30, 30))
         self.btn_option.setFlat(True)
 
@@ -202,6 +214,9 @@ class Ui_MainWindow(object):
 "QPushButton:hover{	\n"
 "background-color: rgb(120, 117, 113);\n"
 "}")
+        icon4 = QIcon()
+        icon4.addFile(u"../resource/asset/maximize.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_maximize.setIcon(icon4)
         self.btn_maximize.setIconSize(QSize(30, 30))
         self.btn_close = QPushButton(self.frame_5)
         self.btn_close.setObjectName(u"btn_close")
@@ -218,6 +233,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 0, 0);\n"
 "	\n"
 "}")
+        icon5 = QIcon()
+        icon5.addFile(u"../resource/asset/x-square.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_close.setIcon(icon5)
         self.btn_close.setIconSize(QSize(30, 30))
         self.btn_minimize = QPushButton(self.frame_5)
         self.btn_minimize.setObjectName(u"btn_minimize")
@@ -233,6 +251,9 @@ class Ui_MainWindow(object):
 "QPushButton:hover{	\n"
 "	background-color: rgb(120, 117, 113);\n"
 "}")
+        icon6 = QIcon()
+        icon6.addFile(u"../resource/asset/minimize.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_minimize.setIcon(icon6)
         self.btn_minimize.setIconSize(QSize(30, 30))
 
         self.horizontalLayout.addWidget(self.frame_5)
@@ -391,7 +412,7 @@ class Ui_MainWindow(object):
         self.frame_6.setFrameShadow(QFrame.Raised)
         self.image = QLabel(self.frame_6)
         self.image.setObjectName(u"image")
-        self.image.setGeometry(QRect(10, 0, 251, 261))
+        self.image.setGeometry(QRect(0, 0, 251, 261))
         font2 = QFont()
         font2.setFamilies([u"Arial"])
         font2.setPointSize(14)
@@ -402,6 +423,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(66, 66, 66);\n"
 "	border-radius: 10px;\n"
 "}")
+        self.image.setPixmap(QPixmap(u"../resource/asset/image.svg"))
         self.image.setAlignment(Qt.AlignCenter)
         self.itemId = QLabel(self.frame_6)
         self.itemId.setObjectName(u"itemId")
@@ -462,6 +484,7 @@ class Ui_MainWindow(object):
 "	background-color: rgb(66, 66, 66);\n"
 "	border-radius: 10px;\n"
 "}")
+        self.cameraFeed.setPixmap(QPixmap(u"../resource/asset/camera.svg"))
         self.cameraFeed.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_2.addWidget(self.cameraFeed)

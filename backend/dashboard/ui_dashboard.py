@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardLUBOCg.ui'
+## Form generated from reading UI file 'dashboardDTvfXW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -19,13 +19,16 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(879, 572)
+        MainWindow.resize(780, 460)
+        MainWindow.setMaximumSize(QSize(780, 460))
         MainWindow.setStyleSheet(u"background-color: rgb(45, 45, 45);")
         self.mainWindow = QWidget(MainWindow)
         self.mainWindow.setObjectName(u"mainWindow")
+        self.mainWindow.setMinimumSize(QSize(780, 460))
+        self.mainWindow.setMaximumSize(QSize(780, 460))
         self.mainWindow.setStyleSheet(u"background-color: rgb(45, 45, 45);")
         self.verticalLayout = QVBoxLayout(self.mainWindow)
-        self.verticalLayout.setSpacing(6)
+        self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.frame_2 = QFrame(self.mainWindow)
@@ -78,6 +81,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon = QIcon()
+        icon.addFile(u"../resource/asset/home.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_home.setIcon(icon)
         self.btn_home.setIconSize(QSize(30, 30))
         self.btn_home.setFlat(True)
 
@@ -105,6 +111,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon1 = QIcon()
+        icon1.addFile(u"../resource/asset/shopping-cart.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_cart.setIcon(icon1)
         self.btn_cart.setIconSize(QSize(30, 30))
         self.btn_cart.setFlat(True)
 
@@ -132,6 +141,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon2 = QIcon()
+        icon2.addFile(u"../resource/asset/refresh-cw.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_update.setIcon(icon2)
         self.btn_update.setIconSize(QSize(30, 30))
         self.btn_update.setFlat(True)
 
@@ -159,6 +171,9 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
+        icon3 = QIcon()
+        icon3.addFile(u"../resource/asset/help-circle.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_option.setIcon(icon3)
         self.btn_option.setIconSize(QSize(30, 30))
         self.btn_option.setFlat(True)
 
@@ -197,6 +212,9 @@ class Ui_MainWindow(object):
 "QPushButton:hover{	\n"
 "background-color: rgb(120, 117, 113);\n"
 "}")
+        icon4 = QIcon()
+        icon4.addFile(u"../resource/asset/maximize.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_maximize.setIcon(icon4)
         self.btn_maximize.setIconSize(QSize(30, 30))
         self.btn_close = QPushButton(self.frame_5)
         self.btn_close.setObjectName(u"btn_close")
@@ -213,6 +231,9 @@ class Ui_MainWindow(object):
 "	background-color: rgb(255, 0, 0);\n"
 "	\n"
 "}")
+        icon5 = QIcon()
+        icon5.addFile(u"../resource/asset/x-square.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_close.setIcon(icon5)
         self.btn_close.setIconSize(QSize(30, 30))
         self.btn_minimize = QPushButton(self.frame_5)
         self.btn_minimize.setObjectName(u"btn_minimize")
@@ -228,6 +249,9 @@ class Ui_MainWindow(object):
 "QPushButton:hover{	\n"
 "	background-color: rgb(120, 117, 113);\n"
 "}")
+        icon6 = QIcon()
+        icon6.addFile(u"../resource/asset/minimize.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_minimize.setIcon(icon6)
         self.btn_minimize.setIconSize(QSize(30, 30))
 
         self.horizontalLayout.addWidget(self.frame_5)
@@ -237,40 +261,42 @@ class Ui_MainWindow(object):
 
         self.stackedWidget = QStackedWidget(self.mainWindow)
         self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setMinimumSize(QSize(780, 460))
+        self.stackedWidget.setMaximumSize(QSize(780, 460))
         self.home = QWidget()
         self.home.setObjectName(u"home")
+        self.horizontalLayout_2 = QHBoxLayout(self.home)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.frame = QFrame(self.home)
         self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(0, 416, 879, 100))
-        self.frame.setMinimumSize(QSize(0, 100))
-        self.frame.setMaximumSize(QSize(16777215, 100))
-        self.frame.setFrameShape(QFrame.NoFrame)
+        self.frame.setMaximumSize(QSize(250, 16777215))
+        self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_4 = QHBoxLayout(self.frame)
-        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.frame_8 = QFrame(self.frame)
-        self.frame_8.setObjectName(u"frame_8")
-        self.frame_8.setMinimumSize(QSize(250, 0))
-        self.frame_8.setMaximumSize(QSize(200, 16777215))
-        self.frame_8.setStyleSheet(u"QLabel{\n"
+        self.image = QLabel(self.frame)
+        self.image.setObjectName(u"image")
+        self.image.setGeometry(QRect(10, 10, 231, 181))
+        font1 = QFont()
+        font1.setFamily(u"Arial")
+        font1.setPointSize(14)
+        font1.setBold(False)
+        font1.setWeight(50)
+        self.image.setFont(font1)
+        self.image.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(66, 66, 66);\n"
 "	border-radius: 10px;\n"
 "}")
-        self.frame_8.setFrameShape(QFrame.StyledPanel)
-        self.frame_8.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_6 = QHBoxLayout(self.frame_8)
-        self.horizontalLayout_6.setSpacing(0)
-        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
-        self.label_notification = QLabel(self.frame_8)
+        self.image.setPixmap(QPixmap(u"../resource/asset/image.svg"))
+        self.image.setAlignment(Qt.AlignCenter)
+        self.label_notification = QLabel(self.frame)
         self.label_notification.setObjectName(u"label_notification")
-        font1 = QFont()
-        font1.setFamily(u"MS Shell Dlg 2")
-        font1.setPointSize(10)
-        font1.setBold(False)
-        font1.setWeight(50)
-        self.label_notification.setFont(font1)
+        self.label_notification.setGeometry(QRect(10, 330, 231, 61))
+        font2 = QFont()
+        font2.setFamily(u"MS Shell Dlg 2")
+        font2.setPointSize(10)
+        font2.setBold(False)
+        font2.setWeight(50)
+        self.label_notification.setFont(font2)
         self.label_notification.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(85, 85, 85);\n"
@@ -278,42 +304,88 @@ class Ui_MainWindow(object):
 "}")
         self.label_notification.setAlignment(Qt.AlignCenter)
         self.label_notification.setWordWrap(True)
-
-        self.horizontalLayout_6.addWidget(self.label_notification)
-
-
-        self.horizontalLayout_4.addWidget(self.frame_8)
-
-        self.frame_9 = QFrame(self.frame)
-        self.frame_9.setObjectName(u"frame_9")
-        self.frame_9.setStyleSheet(u"")
-        self.frame_9.setFrameShape(QFrame.StyledPanel)
-        self.frame_9.setFrameShadow(QFrame.Raised)
-        self.btn_connect = QPushButton(self.frame_9)
-        self.btn_connect.setObjectName(u"btn_connect")
-        self.btn_connect.setGeometry(QRect(10, 20, 161, 45))
-        self.btn_connect.setMinimumSize(QSize(0, 45))
-        self.btn_connect.setMaximumSize(QSize(16777215, 45))
-        self.btn_connect.setFont(font)
-        self.btn_connect.setStyleSheet(u"QPushButton{\n"
+        self.itemId = QLabel(self.frame)
+        self.itemId.setObjectName(u"itemId")
+        self.itemId.setGeometry(QRect(10, 210, 131, 45))
+        self.itemId.setMinimumSize(QSize(45, 45))
+        self.itemId.setFont(font2)
+        self.itemId.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(66, 66, 66);\n"
-"	border:none;\n"
-"	border-radius: 5px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
 "	border-radius: 10px;\n"
-"}\n"
+"	padding-left:10px;\n"
 "\n"
-"QPushButton:pressed{\n"
-"	border: 2px solid rgb(255,255,255);	\n"
 "}")
-        self.btn_connect.setIconSize(QSize(30, 30))
-        self.btn_connect.setFlat(True)
-        self.btn_disconnect = QPushButton(self.frame_9)
+        self.itemId.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.itemPrice = QLabel(self.frame)
+        self.itemPrice.setObjectName(u"itemPrice")
+        self.itemPrice.setGeometry(QRect(150, 210, 91, 45))
+        self.itemPrice.setMinimumSize(QSize(45, 45))
+        self.itemPrice.setFont(font2)
+        self.itemPrice.setStyleSheet(u"QLabel{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border-radius: 10px;\n"
+"	padding-left:10px;\n"
+"\n"
+"}")
+        self.itemPrice.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.itemName = QLabel(self.frame)
+        self.itemName.setObjectName(u"itemName")
+        self.itemName.setGeometry(QRect(10, 270, 231, 45))
+        self.itemName.setMinimumSize(QSize(45, 45))
+        self.itemName.setFont(font2)
+        self.itemName.setStyleSheet(u"QLabel{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border-radius: 10px;\n"
+"\n"
+"}")
+        self.itemName.setAlignment(Qt.AlignCenter)
+
+        self.horizontalLayout_2.addWidget(self.frame)
+
+        self.frame_6 = QFrame(self.home)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setFrameShape(QFrame.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.frame_6)
+        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.frame_7 = QFrame(self.frame_6)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setFrameShape(QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_3 = QVBoxLayout(self.frame_7)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.cameraFeed = QLabel(self.frame_7)
+        self.cameraFeed.setObjectName(u"cameraFeed")
+        self.cameraFeed.setMaximumSize(QSize(490, 16777215))
+        font3 = QFont()
+        font3.setPointSize(11)
+        self.cameraFeed.setFont(font3)
+        self.cameraFeed.setStyleSheet(u"QLabel{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border-radius: 10px;\n"
+"}")
+        self.cameraFeed.setPixmap(QPixmap(u"../resource/asset/camera.svg"))
+        self.cameraFeed.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_3.addWidget(self.cameraFeed)
+
+
+        self.verticalLayout_2.addWidget(self.frame_7)
+
+        self.frame_8 = QFrame(self.frame_6)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setMaximumSize(QSize(16777215, 110))
+        self.frame_8.setFrameShape(QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Raised)
+        self.btn_disconnect = QPushButton(self.frame_8)
         self.btn_disconnect.setObjectName(u"btn_disconnect")
-        self.btn_disconnect.setGeometry(QRect(190, 20, 161, 45))
+        self.btn_disconnect.setGeometry(QRect(190, 10, 161, 45))
         self.btn_disconnect.setMinimumSize(QSize(0, 45))
         self.btn_disconnect.setMaximumSize(QSize(16777215, 45))
         self.btn_disconnect.setFont(font)
@@ -333,9 +405,31 @@ class Ui_MainWindow(object):
 "}")
         self.btn_disconnect.setIconSize(QSize(30, 30))
         self.btn_disconnect.setFlat(True)
-        self.btn_disconnect_2 = QPushButton(self.frame_9)
+        self.btn_connect = QPushButton(self.frame_8)
+        self.btn_connect.setObjectName(u"btn_connect")
+        self.btn_connect.setGeometry(QRect(10, 10, 161, 45))
+        self.btn_connect.setMinimumSize(QSize(0, 45))
+        self.btn_connect.setMaximumSize(QSize(16777215, 45))
+        self.btn_connect.setFont(font)
+        self.btn_connect.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border:none;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(255,255,255);	\n"
+"}")
+        self.btn_connect.setIconSize(QSize(30, 30))
+        self.btn_connect.setFlat(True)
+        self.btn_disconnect_2 = QPushButton(self.frame_8)
         self.btn_disconnect_2.setObjectName(u"btn_disconnect_2")
-        self.btn_disconnect_2.setGeometry(QRect(370, 20, 111, 45))
+        self.btn_disconnect_2.setGeometry(QRect(380, 10, 111, 45))
         self.btn_disconnect_2.setMinimumSize(QSize(0, 45))
         self.btn_disconnect_2.setMaximumSize(QSize(16777215, 45))
         self.btn_disconnect_2.setFont(font)
@@ -355,116 +449,11 @@ class Ui_MainWindow(object):
 "}")
         self.btn_disconnect_2.setIconSize(QSize(30, 30))
         self.btn_disconnect_2.setFlat(True)
-        self.comboBox = QComboBox(self.frame_9)
-        self.comboBox.setObjectName(u"comboBox")
-        self.comboBox.setGeometry(QRect(540, 20, 61, 45))
-        self.comboBox.setMinimumSize(QSize(0, 45))
-        self.comboBox.setMaximumSize(QSize(16777215, 45))
-        self.comboBox.setFont(font)
-        self.comboBox.setStyleSheet(u"QComboBox{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	padding-left:10px;\n"
-"	border-radius: 5px;\n"
-"}")
-        self.comboBox.setFrame(False)
 
-        self.horizontalLayout_4.addWidget(self.frame_9)
-
-        self.content = QFrame(self.home)
-        self.content.setObjectName(u"content")
-        self.content.setGeometry(QRect(0, 0, 879, 410))
-        self.content.setFrameShape(QFrame.StyledPanel)
-        self.content.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.content)
-        self.horizontalLayout_3.setSpacing(6)
-        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.frame_6 = QFrame(self.content)
-        self.frame_6.setObjectName(u"frame_6")
-        self.frame_6.setMaximumSize(QSize(260, 16777215))
-        self.frame_6.setStyleSheet(u"")
-        self.frame_6.setFrameShape(QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QFrame.Raised)
-        self.image = QLabel(self.frame_6)
-        self.image.setObjectName(u"image")
-        self.image.setGeometry(QRect(10, 0, 251, 261))
-        font2 = QFont()
-        font2.setFamily(u"Arial")
-        font2.setPointSize(14)
-        font2.setBold(False)
-        font2.setWeight(50)
-        self.image.setFont(font2)
-        self.image.setStyleSheet(u"QLabel{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	border-radius: 10px;\n"
-"}")
-        self.image.setAlignment(Qt.AlignCenter)
-        self.itemId = QLabel(self.frame_6)
-        self.itemId.setObjectName(u"itemId")
-        self.itemId.setGeometry(QRect(0, 280, 141, 45))
-        self.itemId.setMinimumSize(QSize(45, 45))
-        self.itemId.setFont(font1)
-        self.itemId.setStyleSheet(u"QLabel{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	border-radius: 10px;\n"
-"	padding-left:10px;\n"
-"\n"
-"}")
-        self.itemId.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.itemPrice = QLabel(self.frame_6)
-        self.itemPrice.setObjectName(u"itemPrice")
-        self.itemPrice.setGeometry(QRect(160, 280, 91, 45))
-        self.itemPrice.setMinimumSize(QSize(45, 45))
-        self.itemPrice.setFont(font1)
-        self.itemPrice.setStyleSheet(u"QLabel{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	border-radius: 10px;\n"
-"	padding-left:10px;\n"
-"\n"
-"}")
-        self.itemPrice.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.itemName = QLabel(self.frame_6)
-        self.itemName.setObjectName(u"itemName")
-        self.itemName.setGeometry(QRect(0, 340, 251, 45))
-        self.itemName.setMinimumSize(QSize(45, 45))
-        self.itemName.setFont(font1)
-        self.itemName.setStyleSheet(u"QLabel{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	border-radius: 10px;\n"
-"\n"
-"}")
-        self.itemName.setAlignment(Qt.AlignCenter)
-
-        self.horizontalLayout_3.addWidget(self.frame_6)
-
-        self.frame_7 = QFrame(self.content)
-        self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setStyleSheet(u"")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_2 = QVBoxLayout(self.frame_7)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.cameraFeed = QLabel(self.frame_7)
-        self.cameraFeed.setObjectName(u"cameraFeed")
-        font3 = QFont()
-        font3.setPointSize(11)
-        self.cameraFeed.setFont(font3)
-        self.cameraFeed.setStyleSheet(u"QLabel{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	border-radius: 10px;\n"
-"}")
-        self.cameraFeed.setAlignment(Qt.AlignCenter)
-
-        self.verticalLayout_2.addWidget(self.cameraFeed)
+        self.verticalLayout_2.addWidget(self.frame_8)
 
 
-        self.horizontalLayout_3.addWidget(self.frame_7)
+        self.horizontalLayout_2.addWidget(self.frame_6)
 
         self.stackedWidget.addWidget(self.home)
         self.update = QWidget()
@@ -518,15 +507,15 @@ class Ui_MainWindow(object):
         self.btn_maximize.setText("")
         self.btn_close.setText("")
         self.btn_minimize.setText("")
-        self.label_notification.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
-        self.btn_connect.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
-        self.btn_disconnect.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
-        self.btn_disconnect_2.setText(QCoreApplication.translate("MainWindow", u"Scan", None))
         self.image.setText("")
+        self.label_notification.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
         self.itemId.setText(QCoreApplication.translate("MainWindow", u"Product Id", None))
         self.itemPrice.setText(QCoreApplication.translate("MainWindow", u"Price", None))
         self.itemName.setText(QCoreApplication.translate("MainWindow", u"Name", None))
         self.cameraFeed.setText("")
+        self.btn_disconnect.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
+        self.btn_connect.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
+        self.btn_disconnect_2.setText(QCoreApplication.translate("MainWindow", u"Scan", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Update", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Help", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Cart", None))

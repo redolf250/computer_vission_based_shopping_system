@@ -1,3 +1,0 @@
-PySide2
-PySide6
-PyQt5
