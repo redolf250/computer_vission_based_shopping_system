@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'dashboardqsmoCO.ui'
+## Form generated from reading UI file 'dashboardLVVFnM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -463,20 +463,183 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.home)
         self.update = QWidget()
         self.update.setObjectName(u"update")
-        self.label = QLabel(self.update)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(270, 170, 241, 61))
-        font5 = QFont()
-        font5.setPointSize(16)
-        self.label.setFont(font5)
-        self.label.setStyleSheet(u"color: rgb(255, 255, 255);")
-        self.label.setAlignment(Qt.AlignCenter)
+        self.horizontalLayout_6 = QHBoxLayout(self.update)
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.frame_11 = QFrame(self.update)
+        self.frame_11.setObjectName(u"frame_11")
+        self.frame_11.setMinimumSize(QSize(300, 0))
+        self.frame_11.setMaximumSize(QSize(200, 16777215))
+        self.frame_11.setFrameShape(QFrame.NoFrame)
+        self.frame_11.setFrameShadow(QFrame.Raised)
+        self.productPrice_ = QLineEdit(self.frame_11)
+        self.productPrice_.setObjectName(u"productPrice_")
+        self.productPrice_.setGeometry(QRect(200, 100, 91, 45))
+        self.productPrice_.setMinimumSize(QSize(0, 45))
+        self.productPrice_.setMaximumSize(QSize(16777215, 45))
+        self.productPrice_.setFont(font)
+        self.productPrice_.setStyleSheet(u"QLineEdit{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border-radius:10px;\n"
+"	padding-left: 10px;\n"
+"}\n"
+"\n"
+"QLineEdit:hover{\n"
+"	border:2px solid rgb(66, 66, 66);\n"
+"}\n"
+"\n"
+"QLineEdit:focus{\n"
+"	border:2px solid rgb(255, 255, 255);\n"
+"}")
+        self.productPrice_.setClearButtonEnabled(True)
+        self.btn_update_product = QPushButton(self.frame_11)
+        self.btn_update_product.setObjectName(u"btn_update_product")
+        self.btn_update_product.setGeometry(QRect(150, 160, 141, 45))
+        self.btn_update_product.setMinimumSize(QSize(0, 45))
+        self.btn_update_product.setMaximumSize(QSize(16777215, 45))
+        self.btn_update_product.setFont(font)
+        self.btn_update_product.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border:none;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(255,255,255);	\n"
+"}")
+        self.btn_update_product.setIconSize(QSize(30, 30))
+        self.btn_update_product.setFlat(True)
+        self.productName = QLineEdit(self.frame_11)
+        self.productName.setObjectName(u"productName")
+        self.productName.setGeometry(QRect(0, 100, 181, 45))
+        self.productName.setMinimumSize(QSize(0, 45))
+        self.productName.setMaximumSize(QSize(16777215, 45))
+        self.productName.setFont(font)
+        self.productName.setStyleSheet(u"QLineEdit{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border-radius:10px;\n"
+"	padding-left: 10px;\n"
+"}\n"
+"\n"
+"QLineEdit:hover{\n"
+"	border:2px solid rgb(66, 66, 66);\n"
+"}\n"
+"\n"
+"QLineEdit:focus{\n"
+"	border:2px solid rgb(255, 255, 255);\n"
+"}")
+        self.productName.setClearButtonEnabled(True)
+        self.label_notification_2 = QLabel(self.frame_11)
+        self.label_notification_2.setObjectName(u"label_notification_2")
+        self.label_notification_2.setGeometry(QRect(0, 320, 291, 61))
+        self.label_notification_2.setFont(font3)
+        self.label_notification_2.setStyleSheet(u"QLabel{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(85, 85, 85);\n"
+"	border-radius: 5px;\n"
+"}")
+        self.label_notification_2.setAlignment(Qt.AlignCenter)
+        self.label_notification_2.setWordWrap(True)
+        self.btn_add_product = QPushButton(self.frame_11)
+        self.btn_add_product.setObjectName(u"btn_add_product")
+        self.btn_add_product.setGeometry(QRect(0, 160, 131, 45))
+        self.btn_add_product.setMinimumSize(QSize(0, 45))
+        self.btn_add_product.setMaximumSize(QSize(16777215, 45))
+        self.btn_add_product.setFont(font)
+        self.btn_add_product.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border:none;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(255,255,255);	\n"
+"}")
+        self.btn_add_product.setIconSize(QSize(30, 30))
+        self.btn_add_product.setFlat(True)
+        self.admin_secret = QLineEdit(self.frame_11)
+        self.admin_secret.setObjectName(u"admin_secret")
+        self.admin_secret.setGeometry(QRect(0, 0, 291, 45))
+        self.admin_secret.setMinimumSize(QSize(0, 45))
+        self.admin_secret.setMaximumSize(QSize(16777215, 45))
+        self.admin_secret.setFont(font)
+        self.admin_secret.setStyleSheet(u"QLineEdit{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border-radius:10px;\n"
+"	padding-left: 10px;\n"
+"}\n"
+"\n"
+"QLineEdit:hover{\n"
+"	border:2px solid rgb(66, 66, 66);\n"
+"}\n"
+"\n"
+"QLineEdit:focus{\n"
+"	border:2px solid rgb(255, 255, 255);\n"
+"}")
+        self.admin_secret.setClearButtonEnabled(True)
+
+        self.horizontalLayout_6.addWidget(self.frame_11)
+
+        self.frame_12 = QFrame(self.update)
+        self.frame_12.setObjectName(u"frame_12")
+        self.frame_12.setFrameShape(QFrame.NoFrame)
+        self.frame_12.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_4 = QVBoxLayout(self.frame_12)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.tableWidget = QTableWidget(self.frame_12)
+        if (self.tableWidget.columnCount() < 2):
+            self.tableWidget.setColumnCount(2)
+        __qtablewidgetitem = QTableWidgetItem()
+        __qtablewidgetitem.setFont(font);
+        self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        __qtablewidgetitem1.setFont(font);
+        self.tableWidget.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.tableWidget.setObjectName(u"tableWidget")
+        self.tableWidget.setFont(font)
+        self.tableWidget.setStyleSheet(u"QTableWidget{\n"
+"		background-color: rgb(66, 66, 66);\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"")
+        self.tableWidget.setFrameShape(QFrame.NoFrame)
+        self.tableWidget.setFrameShadow(QFrame.Plain)
+        self.tableWidget.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.tableWidget.setSelectionMode(QAbstractItemView.SingleSelection)
+        self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.tableWidget.setSortingEnabled(True)
+        self.tableWidget.horizontalHeader().setDefaultSectionSize(200)
+        self.tableWidget.horizontalHeader().setProperty("showSortIndicator", True)
+        self.tableWidget.horizontalHeader().setStretchLastSection(True)
+        self.tableWidget.verticalHeader().setProperty("showSortIndicator", True)
+        self.tableWidget.verticalHeader().setStretchLastSection(False)
+
+        self.verticalLayout_4.addWidget(self.tableWidget)
+
+
+        self.horizontalLayout_6.addWidget(self.frame_12)
+
         self.stackedWidget.addWidget(self.update)
         self.page = QWidget()
         self.page.setObjectName(u"page")
         self.label_3 = QLabel(self.page)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setGeometry(QRect(260, 160, 241, 61))
+        font5 = QFont()
+        font5.setPointSize(16)
         self.label_3.setFont(font5)
         self.label_3.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label_3.setAlignment(Qt.AlignCenter)
@@ -653,7 +816,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -677,7 +840,16 @@ class Ui_MainWindow(object):
         self.cameraFeed.setText("")
         self.btn_disconnect.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
         self.btn_connect.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.productPrice_.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Price", None))
+        self.btn_update_product.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.productName.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Product name", None))
+        self.label_notification_2.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
+        self.btn_add_product.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.admin_secret.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Secret", None))
+        ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Product Name", None));
+        ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Product Price", None));
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Help", None))
         self.quantity.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Quantity", None))
         self.btn_calculateTotal.setText(QCoreApplication.translate("MainWindow", u"Calculate Total", None))
