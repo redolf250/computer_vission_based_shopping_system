@@ -9,10 +9,10 @@ import numpy as np
 from sql import *
 from datetime import datetime
 
-from PySide6 import QtCore
-from PySide6.QtWidgets import *
-from PySide6.QtCore import *
-from PySide6.QtGui import *
+from PySide2 import QtCore
+from PySide2.QtWidgets import *
+from PySide2.QtCore import *
+from PySide2.QtGui import *
 
 from dashboard.ui_dashboard import Ui_MainWindow
 from launcher.ui_launcher import Ui_Launcher
@@ -283,4 +283,4 @@ class Launcher(QMainWindow):
 if __name__ == '__main__':
     application = QApplication(sys.argv)
     window = Launcher() 
-    sys.exit(application.exec())
+    sys.exit(application.exec_())
