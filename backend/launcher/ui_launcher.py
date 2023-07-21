@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'launcherbUJojQ.ui'
+## Form generated from reading UI file 'launcherIxDuMy.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -35,7 +35,7 @@ class Ui_Launcher(object):
         self.main.setFrameShadow(QFrame.Sunken)
         self.label = QLabel(self.main)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(50, 60, 281, 71))
+        self.label.setGeometry(QRect(60, 80, 251, 71))
         font = QFont()
         font.setFamily(u"Modern No. 20")
         font.setPointSize(40)
