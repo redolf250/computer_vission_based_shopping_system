@@ -1,7 +1,6 @@
-		   SIKAMART 		
-   ADDRESS: PA1 1XQ	   CONTACT: 000-000-000
-   DATE: dateStamp	      RECEIPT: receiptNumber
-
-======================================
-   PRODUCT            QUANTITY        PRICE	            TOTAL
-======================================
+		   		SIKAMART
+   		ADDRESS: PA1 1XQ	   	CONTACT: 000-000-000
+   		DATE: dateStamp	      	RECEIPT: receiptNumber
+============================================================
+    PRODUCT            		    	QUANTITY        	 PRICE	                AMOUNT
+============================================================
