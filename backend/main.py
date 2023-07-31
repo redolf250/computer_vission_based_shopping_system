@@ -1,29 +1,21 @@
 import json
-import os
-import re
 import sqlite3
-import cv2
-import sys
-import uuid
-import numpy as np
-from sql import *
 from datetime import datetime
 
 import cvzone
-from ultralytics.utils import *
-from ultralytics import YOLO
-
 from PySide2 import QtCore
-from PySide2.QtWidgets import *
 from PySide2.QtCore import *
 from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+from ultralytics import YOLO
+from ultralytics.utils import *
 
 from dashboard.ui_dashboard import Ui_MainWindow
 from launcher.ui_launcher import Ui_Launcher
+from sql import *
 
 GLOBAL_STATE = 0
 counter = 0
-
 
 class Main(QMainWindow):
     def __init__(self, **kwargs):
@@ -78,7 +70,6 @@ class Main(QMainWindow):
         self.ui_main.tableWidget_receipt.itemSelectionChanged.connect(self.handle_cart_table_selection_change)
 
         self.ui_main.btn_remove_item_from_cart.clicked.connect(self.remove_product_from_cart)
-
 
         self.items = {}
         self.product_names: list = []
@@ -267,9 +258,6 @@ class Main(QMainWindow):
         self.ui_main.productName.clear()
         self.ui_main.productPrice_.clear()
         self.ui_main.label_notification_products.setText("Notification")
-
-    def set_product_page_combobox_items(self, items: dict):
-        self.ui_main.cartProducts.addItems(items)
 
     def clear_cart_items(self):
         self.items.clear()
