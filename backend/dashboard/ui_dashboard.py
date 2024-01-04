@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
+<<<<<<< HEAD
 ## Form generated from reading UI file 'dashboardLVVFnM.ui'
+=======
+## Form generated from reading UI file 'dashboardCZaJPK.ui'
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
 ##
 ## Created by: Qt User Interface Compiler version 5.14.1
 ##
@@ -15,11 +19,12 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
     QRadialGradient)
 from PySide2.QtWidgets import *
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(780, 462)
+        MainWindow.resize(780, 461)
         MainWindow.setMinimumSize(QSize(0, 400))
         MainWindow.setMaximumSize(QSize(780, 500))
         MainWindow.setStyleSheet(u"background-color: rgb(45, 45, 45);")
@@ -40,9 +45,10 @@ class Ui_MainWindow(object):
 "background-color: rgb(80, 80, 80);\n"
 "}\n"
 "")
-        self.frame_2.setFrameShape(QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.frame_2.setFrameShape(QFrame.NoFrame)
+        self.frame_2.setFrameShadow(QFrame.Plain)
         self.horizontalLayout = QHBoxLayout(self.frame_2)
+        self.horizontalLayout.setSpacing(0)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.frame_3 = QFrame(self.frame_2)
@@ -120,6 +126,36 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.btn_cart)
 
+        self.btn_receipt = QPushButton(self.frame_3)
+        self.btn_receipt.setObjectName(u"btn_receipt")
+        self.btn_receipt.setMaximumSize(QSize(100, 40))
+        self.btn_receipt.setFont(font)
+        self.btn_receipt.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(80, 80, 80);\n"
+"	border:none;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	border-bottom: 3px solid rgb(255,255,255);\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	border-bottom: 2px solid rgb(255,255,255);	\n"
+"}\n"
+"\n"
+" QPushButton:focus{\n"
+"    color: rgb(255, 255, 255);\n"
+"    border-bottom: 2px solid rgb(255,255,255);	\n"
+"  }")
+        icon2 = QIcon()
+        icon2.addFile(u"../resource/asset/file.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_receipt.setIcon(icon2)
+        self.btn_receipt.setIconSize(QSize(30, 30))
+        self.btn_receipt.setFlat(True)
+
+        self.horizontalLayout_5.addWidget(self.btn_receipt)
+
         self.btn_update = QPushButton(self.frame_3)
         self.btn_update.setObjectName(u"btn_update")
         self.btn_update.setMaximumSize(QSize(100, 40))
@@ -142,43 +178,13 @@ class Ui_MainWindow(object):
 "    color: rgb(255, 255, 255);\n"
 "    border-bottom: 2px solid rgb(255,255,255);	\n"
 "  }")
-        icon2 = QIcon()
-        icon2.addFile(u"../resource/asset/refresh-cw.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_update.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u"../resource/asset/refresh-cw.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_update.setIcon(icon3)
         self.btn_update.setIconSize(QSize(30, 30))
         self.btn_update.setFlat(True)
 
         self.horizontalLayout_5.addWidget(self.btn_update)
-
-        self.btn_option = QPushButton(self.frame_3)
-        self.btn_option.setObjectName(u"btn_option")
-        self.btn_option.setMaximumSize(QSize(100, 40))
-        self.btn_option.setFont(font)
-        self.btn_option.setStyleSheet(u"QPushButton{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(80, 80, 80);\n"
-"	border:none;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"	border-bottom: 3px solid rgb(255,255,255);\n"
-"}\n"
-"\n"
-"QPushButton:pressed{\n"
-"	border-bottom: 2px solid rgb(255,255,255);	\n"
-"}\n"
-"\n"
-" QPushButton:focus{\n"
-"    color: rgb(255, 255, 255);\n"
-"    border-bottom: 2px solid rgb(255,255,255);	\n"
-"  }")
-        icon3 = QIcon()
-        icon3.addFile(u"../resource/asset/help-circle.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_option.setIcon(icon3)
-        self.btn_option.setIconSize(QSize(30, 30))
-        self.btn_option.setFlat(True)
-
-        self.horizontalLayout_5.addWidget(self.btn_option)
 
 
         self.horizontalLayout.addWidget(self.frame_3)
@@ -205,7 +211,7 @@ class Ui_MainWindow(object):
         self.cartTotalItemsTopBAr.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(66, 66, 66);\n"
-"	border-radius: 20px;\n"
+"	border-radius: 15px;\n"
 "}")
         self.cartTotalItemsTopBAr.setAlignment(Qt.AlignCenter)
 
@@ -286,6 +292,7 @@ class Ui_MainWindow(object):
         self.home.setMinimumSize(QSize(0, 410))
         self.horizontalLayout_2 = QHBoxLayout(self.home)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.horizontalLayout_2.setContentsMargins(9, 5, 5, 5)
         self.frame = QFrame(self.home)
         self.frame.setObjectName(u"frame")
         self.frame.setMaximumSize(QSize(250, 16777215))
@@ -309,7 +316,7 @@ class Ui_MainWindow(object):
         self.image.setAlignment(Qt.AlignCenter)
         self.label_notification = QLabel(self.frame)
         self.label_notification.setObjectName(u"label_notification")
-        self.label_notification.setGeometry(QRect(0, 320, 241, 61))
+        self.label_notification.setGeometry(QRect(0, 330, 241, 61))
         font3 = QFont()
         font3.setFamily(u"MS Shell Dlg 2")
         font3.setPointSize(10)
@@ -323,35 +330,21 @@ class Ui_MainWindow(object):
 "}")
         self.label_notification.setAlignment(Qt.AlignCenter)
         self.label_notification.setWordWrap(True)
-        self.itemId = QLabel(self.frame)
-        self.itemId.setObjectName(u"itemId")
-        self.itemId.setGeometry(QRect(0, 200, 131, 45))
-        self.itemId.setMinimumSize(QSize(45, 45))
-        self.itemId.setFont(font3)
-        self.itemId.setStyleSheet(u"QLabel{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	border-radius: 10px;\n"
-"	padding-left:10px;\n"
-"\n"
-"}")
-        self.itemId.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.itemPrice = QLabel(self.frame)
         self.itemPrice.setObjectName(u"itemPrice")
-        self.itemPrice.setGeometry(QRect(150, 200, 91, 45))
+        self.itemPrice.setGeometry(QRect(0, 270, 241, 45))
         self.itemPrice.setMinimumSize(QSize(45, 45))
         self.itemPrice.setFont(font3)
         self.itemPrice.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(66, 66, 66);\n"
 "	border-radius: 10px;\n"
-"	padding-left:10px;\n"
 "\n"
 "}")
-        self.itemPrice.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+        self.itemPrice.setAlignment(Qt.AlignCenter)
         self.itemName = QLabel(self.frame)
         self.itemName.setObjectName(u"itemName")
-        self.itemName.setGeometry(QRect(0, 260, 241, 45))
+        self.itemName.setGeometry(QRect(0, 200, 241, 61))
         self.itemName.setMinimumSize(QSize(45, 45))
         self.itemName.setFont(font3)
         self.itemName.setStyleSheet(u"QLabel{\n"
@@ -361,6 +354,7 @@ class Ui_MainWindow(object):
 "\n"
 "}")
         self.itemName.setAlignment(Qt.AlignCenter)
+        self.itemName.setWordWrap(True)
 
         self.horizontalLayout_2.addWidget(self.frame)
 
@@ -378,11 +372,12 @@ class Ui_MainWindow(object):
         self.frame_7.setFrameShape(QFrame.NoFrame)
         self.frame_7.setFrameShadow(QFrame.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.frame_7)
+        self.verticalLayout_3.setSpacing(3)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.cameraFeed = QLabel(self.frame_7)
         self.cameraFeed.setObjectName(u"cameraFeed")
-        self.cameraFeed.setMaximumSize(QSize(500, 16777215))
+        self.cameraFeed.setMaximumSize(QSize(505, 16777215))
         font4 = QFont()
         font4.setPointSize(11)
         self.cameraFeed.setFont(font4)
@@ -406,7 +401,7 @@ class Ui_MainWindow(object):
         self.frame_8.setFrameShadow(QFrame.Raised)
         self.btn_disconnect = QPushButton(self.frame_8)
         self.btn_disconnect.setObjectName(u"btn_disconnect")
-        self.btn_disconnect.setGeometry(QRect(270, 10, 231, 45))
+        self.btn_disconnect.setGeometry(QRect(340, 10, 161, 45))
         self.btn_disconnect.setMinimumSize(QSize(0, 45))
         self.btn_disconnect.setMaximumSize(QSize(16777215, 45))
         self.btn_disconnect.setFont(font)
@@ -431,7 +426,7 @@ class Ui_MainWindow(object):
         self.btn_disconnect.setFlat(True)
         self.btn_connect = QPushButton(self.frame_8)
         self.btn_connect.setObjectName(u"btn_connect")
-        self.btn_connect.setGeometry(QRect(0, 10, 241, 45))
+        self.btn_connect.setGeometry(QRect(170, 10, 151, 45))
         self.btn_connect.setMinimumSize(QSize(0, 45))
         self.btn_connect.setMaximumSize(QSize(16777215, 45))
         self.btn_connect.setFont(font)
@@ -454,6 +449,31 @@ class Ui_MainWindow(object):
         self.btn_connect.setIcon(icon8)
         self.btn_connect.setIconSize(QSize(30, 30))
         self.btn_connect.setFlat(True)
+        self.btn_clear_cart = QPushButton(self.frame_8)
+        self.btn_clear_cart.setObjectName(u"btn_clear_cart")
+        self.btn_clear_cart.setGeometry(QRect(0, 10, 151, 45))
+        self.btn_clear_cart.setMinimumSize(QSize(0, 45))
+        self.btn_clear_cart.setMaximumSize(QSize(16777215, 45))
+        self.btn_clear_cart.setFont(font)
+        self.btn_clear_cart.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border:none;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(255,255,255);	\n"
+"}")
+        icon9 = QIcon()
+        icon9.addFile(u"../../../virtualenv/application/resource/asset/shopping-cart.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_clear_cart.setIcon(icon9)
+        self.btn_clear_cart.setIconSize(QSize(30, 30))
+        self.btn_clear_cart.setFlat(True)
 
         self.verticalLayout_2.addWidget(self.frame_8)
 
@@ -465,6 +485,10 @@ class Ui_MainWindow(object):
         self.update.setObjectName(u"update")
         self.horizontalLayout_6 = QHBoxLayout(self.update)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+<<<<<<< HEAD
+=======
+        self.horizontalLayout_6.setContentsMargins(-1, 9, -1, 5)
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.frame_11 = QFrame(self.update)
         self.frame_11.setObjectName(u"frame_11")
         self.frame_11.setMinimumSize(QSize(300, 0))
@@ -473,9 +497,15 @@ class Ui_MainWindow(object):
         self.frame_11.setFrameShadow(QFrame.Raised)
         self.productPrice_ = QLineEdit(self.frame_11)
         self.productPrice_.setObjectName(u"productPrice_")
+<<<<<<< HEAD
         self.productPrice_.setGeometry(QRect(200, 100, 91, 45))
         self.productPrice_.setMinimumSize(QSize(0, 45))
         self.productPrice_.setMaximumSize(QSize(16777215, 45))
+=======
+        self.productPrice_.setGeometry(QRect(0, 160, 131, 50))
+        self.productPrice_.setMinimumSize(QSize(0, 50))
+        self.productPrice_.setMaximumSize(QSize(16777215, 50))
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.productPrice_.setFont(font)
         self.productPrice_.setStyleSheet(u"QLineEdit{\n"
 "	color: rgb(255, 255, 255);\n"
@@ -494,8 +524,13 @@ class Ui_MainWindow(object):
         self.productPrice_.setClearButtonEnabled(True)
         self.btn_update_product = QPushButton(self.frame_11)
         self.btn_update_product.setObjectName(u"btn_update_product")
+<<<<<<< HEAD
         self.btn_update_product.setGeometry(QRect(150, 160, 141, 45))
         self.btn_update_product.setMinimumSize(QSize(0, 45))
+=======
+        self.btn_update_product.setGeometry(QRect(0, 230, 131, 50))
+        self.btn_update_product.setMinimumSize(QSize(0, 50))
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.btn_update_product.setMaximumSize(QSize(16777215, 45))
         self.btn_update_product.setFont(font)
         self.btn_update_product.setStyleSheet(u"QPushButton{\n"
@@ -512,13 +547,25 @@ class Ui_MainWindow(object):
 "QPushButton:pressed{\n"
 "	border: 2px solid rgb(255,255,255);	\n"
 "}")
+<<<<<<< HEAD
+=======
+        icon10 = QIcon()
+        icon10.addFile(u"../../../virtualenv/application/resource/asset/refresh-cw.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_update_product.setIcon(icon10)
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.btn_update_product.setIconSize(QSize(30, 30))
         self.btn_update_product.setFlat(True)
         self.productName = QLineEdit(self.frame_11)
         self.productName.setObjectName(u"productName")
+<<<<<<< HEAD
         self.productName.setGeometry(QRect(0, 100, 181, 45))
         self.productName.setMinimumSize(QSize(0, 45))
         self.productName.setMaximumSize(QSize(16777215, 45))
+=======
+        self.productName.setGeometry(QRect(0, 90, 291, 50))
+        self.productName.setMinimumSize(QSize(0, 50))
+        self.productName.setMaximumSize(QSize(16777215, 50))
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.productName.setFont(font)
         self.productName.setStyleSheet(u"QLineEdit{\n"
 "	color: rgb(255, 255, 255);\n"
@@ -535,21 +582,39 @@ class Ui_MainWindow(object):
 "	border:2px solid rgb(255, 255, 255);\n"
 "}")
         self.productName.setClearButtonEnabled(True)
+<<<<<<< HEAD
         self.label_notification_2 = QLabel(self.frame_11)
         self.label_notification_2.setObjectName(u"label_notification_2")
         self.label_notification_2.setGeometry(QRect(0, 320, 291, 61))
         self.label_notification_2.setFont(font3)
         self.label_notification_2.setStyleSheet(u"QLabel{\n"
+=======
+        self.label_notification_products = QLabel(self.frame_11)
+        self.label_notification_products.setObjectName(u"label_notification_products")
+        self.label_notification_products.setGeometry(QRect(0, 310, 291, 68))
+        self.label_notification_products.setMaximumSize(QSize(16777215, 68))
+        self.label_notification_products.setFont(font3)
+        self.label_notification_products.setStyleSheet(u"QLabel{\n"
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(85, 85, 85);\n"
 "	border-radius: 5px;\n"
 "}")
+<<<<<<< HEAD
         self.label_notification_2.setAlignment(Qt.AlignCenter)
         self.label_notification_2.setWordWrap(True)
         self.btn_add_product = QPushButton(self.frame_11)
         self.btn_add_product.setObjectName(u"btn_add_product")
         self.btn_add_product.setGeometry(QRect(0, 160, 131, 45))
         self.btn_add_product.setMinimumSize(QSize(0, 45))
+=======
+        self.label_notification_products.setAlignment(Qt.AlignCenter)
+        self.label_notification_products.setWordWrap(True)
+        self.btn_add_product = QPushButton(self.frame_11)
+        self.btn_add_product.setObjectName(u"btn_add_product")
+        self.btn_add_product.setGeometry(QRect(150, 160, 141, 50))
+        self.btn_add_product.setMinimumSize(QSize(0, 50))
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.btn_add_product.setMaximumSize(QSize(16777215, 45))
         self.btn_add_product.setFont(font)
         self.btn_add_product.setStyleSheet(u"QPushButton{\n"
@@ -566,13 +631,25 @@ class Ui_MainWindow(object):
 "QPushButton:pressed{\n"
 "	border: 2px solid rgb(255,255,255);	\n"
 "}")
+<<<<<<< HEAD
+=======
+        icon11 = QIcon()
+        icon11.addFile(u"../../../virtualenv/application/resource/asset/plus.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_add_product.setIcon(icon11)
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.btn_add_product.setIconSize(QSize(30, 30))
         self.btn_add_product.setFlat(True)
         self.admin_secret = QLineEdit(self.frame_11)
         self.admin_secret.setObjectName(u"admin_secret")
+<<<<<<< HEAD
         self.admin_secret.setGeometry(QRect(0, 0, 291, 45))
         self.admin_secret.setMinimumSize(QSize(0, 45))
         self.admin_secret.setMaximumSize(QSize(16777215, 45))
+=======
+        self.admin_secret.setGeometry(QRect(0, 0, 291, 50))
+        self.admin_secret.setMinimumSize(QSize(0, 50))
+        self.admin_secret.setMaximumSize(QSize(16777215, 50))
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.admin_secret.setFont(font)
         self.admin_secret.setStyleSheet(u"QLineEdit{\n"
 "	color: rgb(255, 255, 255);\n"
@@ -589,6 +666,34 @@ class Ui_MainWindow(object):
 "	border:2px solid rgb(255, 255, 255);\n"
 "}")
         self.admin_secret.setClearButtonEnabled(True)
+<<<<<<< HEAD
+=======
+        self.btn_reload_ui = QPushButton(self.frame_11)
+        self.btn_reload_ui.setObjectName(u"btn_reload_ui")
+        self.btn_reload_ui.setGeometry(QRect(160, 230, 131, 50))
+        self.btn_reload_ui.setMinimumSize(QSize(0, 50))
+        self.btn_reload_ui.setMaximumSize(QSize(16777215, 45))
+        self.btn_reload_ui.setFont(font)
+        self.btn_reload_ui.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border:none;\n"
+"	border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"	border-radius: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"	border: 2px solid rgb(255,255,255);	\n"
+"}")
+        icon12 = QIcon()
+        icon12.addFile(u"../../../virtualenv/application/resource/asset/delete.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_reload_ui.setIcon(icon12)
+        self.btn_reload_ui.setIconSize(QSize(30, 30))
+        self.btn_reload_ui.setFlat(True)
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
 
         self.horizontalLayout_6.addWidget(self.frame_11)
 
@@ -633,6 +738,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.addWidget(self.frame_12)
 
         self.stackedWidget.addWidget(self.update)
+<<<<<<< HEAD
         self.page = QWidget()
         self.page.setObjectName(u"page")
         self.label_3 = QLabel(self.page)
@@ -644,6 +750,24 @@ class Ui_MainWindow(object):
         self.label_3.setStyleSheet(u"color: rgb(255, 255, 255);")
         self.label_3.setAlignment(Qt.AlignCenter)
         self.stackedWidget.addWidget(self.page)
+=======
+        self.receipt = QWidget()
+        self.receipt.setObjectName(u"receipt")
+        self.verticalLayout_5 = QVBoxLayout(self.receipt)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.verticalLayout_5.setContentsMargins(-1, -1, -1, 5)
+        self.textEdit = QTextEdit(self.receipt)
+        self.textEdit.setObjectName(u"textEdit")
+        self.textEdit.setFont(font)
+        self.textEdit.setStyleSheet(u"color: rgb(255, 255, 255);")
+        self.textEdit.setFrameShape(QFrame.NoFrame)
+        self.textEdit.setFrameShadow(QFrame.Plain)
+        self.textEdit.setReadOnly(True)
+
+        self.verticalLayout_5.addWidget(self.textEdit)
+
+        self.stackedWidget.addWidget(self.receipt)
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.cart = QWidget()
         self.cart.setObjectName(u"cart")
         self.cart.setMinimumSize(QSize(0, 0))
@@ -656,22 +780,9 @@ class Ui_MainWindow(object):
         self.frame_9.setMaximumSize(QSize(200, 16777215))
         self.frame_9.setFrameShape(QFrame.NoFrame)
         self.frame_9.setFrameShadow(QFrame.Plain)
-        self.cartProducts = QComboBox(self.frame_9)
-        self.cartProducts.setObjectName(u"cartProducts")
-        self.cartProducts.setGeometry(QRect(0, 70, 221, 45))
-        self.cartProducts.setMinimumSize(QSize(0, 45))
-        self.cartProducts.setMaximumSize(QSize(16777215, 45))
-        self.cartProducts.setFont(font)
-        self.cartProducts.setStyleSheet(u"QComboBox{\n"
-"	color: rgb(255, 255, 255);\n"
-"	background-color: rgb(66, 66, 66);\n"
-"	padding-left:10px;\n"
-"	border-radius: 5px;\n"
-"}")
-        self.cartProducts.setFrame(False)
         self.quantity = QLineEdit(self.frame_9)
         self.quantity.setObjectName(u"quantity")
-        self.quantity.setGeometry(QRect(110, 130, 111, 45))
+        self.quantity.setGeometry(QRect(0, 190, 221, 45))
         self.quantity.setMinimumSize(QSize(0, 45))
         self.quantity.setMaximumSize(QSize(16777215, 45))
         self.quantity.setFont(font)
@@ -690,13 +801,13 @@ class Ui_MainWindow(object):
 "	border:2px solid rgb(255, 255, 255);\n"
 "}")
         self.quantity.setClearButtonEnabled(True)
-        self.btn_calculateTotal = QPushButton(self.frame_9)
-        self.btn_calculateTotal.setObjectName(u"btn_calculateTotal")
-        self.btn_calculateTotal.setGeometry(QRect(0, 200, 221, 45))
-        self.btn_calculateTotal.setMinimumSize(QSize(0, 45))
-        self.btn_calculateTotal.setMaximumSize(QSize(16777215, 45))
-        self.btn_calculateTotal.setFont(font)
-        self.btn_calculateTotal.setStyleSheet(u"QPushButton{\n"
+        self.btn_remove_item_from_cart = QPushButton(self.frame_9)
+        self.btn_remove_item_from_cart.setObjectName(u"btn_remove_item_from_cart")
+        self.btn_remove_item_from_cart.setGeometry(QRect(0, 250, 111, 45))
+        self.btn_remove_item_from_cart.setMinimumSize(QSize(0, 45))
+        self.btn_remove_item_from_cart.setMaximumSize(QSize(16777215, 45))
+        self.btn_remove_item_from_cart.setFont(font)
+        self.btn_remove_item_from_cart.setStyleSheet(u"QPushButton{\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(66, 66, 66);\n"
 "	border:none;\n"
@@ -710,22 +821,25 @@ class Ui_MainWindow(object):
 "QPushButton:pressed{\n"
 "	border: 2px solid rgb(255,255,255);	\n"
 "}")
-        self.btn_calculateTotal.setIconSize(QSize(30, 30))
-        self.btn_calculateTotal.setFlat(True)
-        self.cartTotalItems = QLabel(self.frame_9)
-        self.cartTotalItems.setObjectName(u"cartTotalItems")
-        self.cartTotalItems.setGeometry(QRect(0, 10, 91, 45))
-        self.cartTotalItems.setMinimumSize(QSize(45, 45))
-        self.cartTotalItems.setFont(font3)
-        self.cartTotalItems.setStyleSheet(u"QLabel{\n"
+        icon13 = QIcon()
+        icon13.addFile(u"../../../virtualenv/application/resource/asset/minus.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_remove_item_from_cart.setIcon(icon13)
+        self.btn_remove_item_from_cart.setIconSize(QSize(30, 30))
+        self.btn_remove_item_from_cart.setFlat(True)
+        self.prouctSubAmount = QLabel(self.frame_9)
+        self.prouctSubAmount.setObjectName(u"prouctSubAmount")
+        self.prouctSubAmount.setGeometry(QRect(120, 130, 101, 45))
+        self.prouctSubAmount.setMinimumSize(QSize(45, 45))
+        self.prouctSubAmount.setFont(font3)
+        self.prouctSubAmount.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(66, 66, 66);\n"
 "	border-radius: 5px;\n"
 "}")
-        self.cartTotalItems.setAlignment(Qt.AlignCenter)
+        self.prouctSubAmount.setAlignment(Qt.AlignCenter)
         self.cart_notification = QLabel(self.frame_9)
         self.cart_notification.setObjectName(u"cart_notification")
-        self.cart_notification.setGeometry(QRect(0, 320, 221, 71))
+        self.cart_notification.setGeometry(QRect(0, 320, 221, 61))
         self.cart_notification.setFont(font3)
         self.cart_notification.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 255, 255);\n"
@@ -736,7 +850,7 @@ class Ui_MainWindow(object):
         self.cart_notification.setWordWrap(True)
         self.cartTotalAmount = QLabel(self.frame_9)
         self.cartTotalAmount.setObjectName(u"cartTotalAmount")
-        self.cartTotalAmount.setGeometry(QRect(110, 10, 111, 45))
+        self.cartTotalAmount.setGeometry(QRect(0, 10, 221, 45))
         self.cartTotalAmount.setMinimumSize(QSize(45, 45))
         self.cartTotalAmount.setFont(font3)
         self.cartTotalAmount.setStyleSheet(u"QLabel{\n"
@@ -747,7 +861,7 @@ class Ui_MainWindow(object):
         self.cartTotalAmount.setAlignment(Qt.AlignCenter)
         self.productPrice = QLabel(self.frame_9)
         self.productPrice.setObjectName(u"productPrice")
-        self.productPrice.setGeometry(QRect(0, 130, 91, 45))
+        self.productPrice.setGeometry(QRect(0, 130, 101, 45))
         self.productPrice.setMinimumSize(QSize(45, 45))
         self.productPrice.setFont(font3)
         self.productPrice.setStyleSheet(u"QLabel{\n"
@@ -758,7 +872,7 @@ class Ui_MainWindow(object):
         self.productPrice.setAlignment(Qt.AlignCenter)
         self.btn_printReceipt = QPushButton(self.frame_9)
         self.btn_printReceipt.setObjectName(u"btn_printReceipt")
-        self.btn_printReceipt.setGeometry(QRect(0, 260, 221, 45))
+        self.btn_printReceipt.setGeometry(QRect(120, 250, 101, 45))
         self.btn_printReceipt.setMinimumSize(QSize(0, 45))
         self.btn_printReceipt.setMaximumSize(QSize(16777215, 45))
         self.btn_printReceipt.setFont(font)
@@ -776,11 +890,22 @@ class Ui_MainWindow(object):
 "QPushButton:pressed{\n"
 "	border: 2px solid rgb(255,255,255);	\n"
 "}")
-        icon9 = QIcon()
-        icon9.addFile(u"../../../shopping/resource/asset/printer.svg", QSize(), QIcon.Normal, QIcon.Off)
-        self.btn_printReceipt.setIcon(icon9)
+        icon14 = QIcon()
+        icon14.addFile(u"../../../shopping/resource/asset/printer.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.btn_printReceipt.setIcon(icon14)
         self.btn_printReceipt.setIconSize(QSize(30, 30))
         self.btn_printReceipt.setFlat(True)
+        self.cartProductName = QLabel(self.frame_9)
+        self.cartProductName.setObjectName(u"cartProductName")
+        self.cartProductName.setGeometry(QRect(0, 70, 221, 45))
+        self.cartProductName.setMinimumSize(QSize(45, 45))
+        self.cartProductName.setFont(font3)
+        self.cartProductName.setStyleSheet(u"QLabel{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(66, 66, 66);\n"
+"	border-radius: 5px;\n"
+"}")
+        self.cartProductName.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_3.addWidget(self.frame_9)
 
@@ -790,20 +915,39 @@ class Ui_MainWindow(object):
         self.frame_10.setMaximumSize(QSize(16777215, 450))
         self.frame_10.setFont(font)
         self.frame_10.setFrameShape(QFrame.NoFrame)
-        self.frame_10.setFrameShadow(QFrame.Raised)
+        self.frame_10.setFrameShadow(QFrame.Plain)
         self.horizontalLayout_4 = QHBoxLayout(self.frame_10)
         self.horizontalLayout_4.setSpacing(4)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.horizontalLayout_4.setContentsMargins(0, 4, 0, 4)
-        self.textEdit = QTextEdit(self.frame_10)
-        self.textEdit.setObjectName(u"textEdit")
-        self.textEdit.setFont(font)
-        self.textEdit.setStyleSheet(u"color: rgb(255, 255, 255);\n"
-"padding:15px;")
-        self.textEdit.setFrameShape(QFrame.NoFrame)
-        self.textEdit.setReadOnly(True)
+        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 14)
+        self.tableWidget_receipt = QTableWidget(self.frame_10)
+        if (self.tableWidget_receipt.columnCount() < 4):
+            self.tableWidget_receipt.setColumnCount(4)
+        __qtablewidgetitem2 = QTableWidgetItem()
+        __qtablewidgetitem2.setFont(font);
+        self.tableWidget_receipt.setHorizontalHeaderItem(0, __qtablewidgetitem2)
+        __qtablewidgetitem3 = QTableWidgetItem()
+        __qtablewidgetitem3.setFont(font);
+        self.tableWidget_receipt.setHorizontalHeaderItem(1, __qtablewidgetitem3)
+        __qtablewidgetitem4 = QTableWidgetItem()
+        __qtablewidgetitem4.setFont(font);
+        self.tableWidget_receipt.setHorizontalHeaderItem(2, __qtablewidgetitem4)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        __qtablewidgetitem5.setFont(font);
+        self.tableWidget_receipt.setHorizontalHeaderItem(3, __qtablewidgetitem5)
+        self.tableWidget_receipt.setObjectName(u"tableWidget_receipt")
+        self.tableWidget_receipt.setStyleSheet(u"QTableWidget{\n"
+"		background-color: rgb(66, 66, 66);\n"
+"	color: rgb(255, 255, 255);\n"
+"}\n"
+"")
+        self.tableWidget_receipt.setFrameShape(QFrame.NoFrame)
+        self.tableWidget_receipt.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.tableWidget_receipt.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.tableWidget_receipt.horizontalHeader().setProperty("showSortIndicator", True)
+        self.tableWidget_receipt.horizontalHeader().setStretchLastSection(True)
 
-        self.horizontalLayout_4.addWidget(self.textEdit)
+        self.horizontalLayout_4.addWidget(self.tableWidget_receipt)
 
 
         self.horizontalLayout_3.addWidget(self.frame_10)
@@ -813,6 +957,9 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.stackedWidget)
 
         MainWindow.setCentralWidget(self.mainWindow)
+#if QT_CONFIG(shortcut)
+        self.cartProductName.setBuddy(self.quantity)
+#endif // QT_CONFIG(shortcut)
 
         self.retranslateUi(MainWindow)
 
@@ -826,30 +973,41 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.btn_cart.setText(QCoreApplication.translate("MainWindow", u"Cart", None))
+        self.btn_receipt.setText(QCoreApplication.translate("MainWindow", u"Receipt", None))
         self.btn_update.setText(QCoreApplication.translate("MainWindow", u"Update", None))
-        self.btn_option.setText(QCoreApplication.translate("MainWindow", u"Help", None))
         self.cartTotalItemsTopBAr.setText(QCoreApplication.translate("MainWindow", u"0", None))
         self.btn_maximize.setText("")
         self.btn_close.setText("")
         self.btn_minimize.setText("")
         self.image.setText("")
         self.label_notification.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
-        self.itemId.setText(QCoreApplication.translate("MainWindow", u"Product Id", None))
         self.itemPrice.setText(QCoreApplication.translate("MainWindow", u"Price", None))
         self.itemName.setText(QCoreApplication.translate("MainWindow", u"Name", None))
         self.cameraFeed.setText("")
         self.btn_disconnect.setText(QCoreApplication.translate("MainWindow", u"Disconnect", None))
         self.btn_connect.setText(QCoreApplication.translate("MainWindow", u"Connect", None))
+<<<<<<< HEAD
         self.productPrice_.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Price", None))
         self.btn_update_product.setText(QCoreApplication.translate("MainWindow", u"Update", None))
         self.productName.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Product name", None))
         self.label_notification_2.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
         self.btn_add_product.setText(QCoreApplication.translate("MainWindow", u"Add", None))
         self.admin_secret.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Secret", None))
+=======
+        self.btn_clear_cart.setText(QCoreApplication.translate("MainWindow", u"Clear ", None))
+        self.productPrice_.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Price", None))
+        self.btn_update_product.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.productName.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Product name", None))
+        self.label_notification_products.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
+        self.btn_add_product.setText(QCoreApplication.translate("MainWindow", u"Add", None))
+        self.admin_secret.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Secret", None))
+        self.btn_reload_ui.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Product Name", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
         ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Product Price", None));
+<<<<<<< HEAD
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Help", None))
         self.quantity.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Quantity", None))
         self.btn_calculateTotal.setText(QCoreApplication.translate("MainWindow", u"Calculate Total", None))
@@ -858,10 +1016,28 @@ class Ui_MainWindow(object):
         self.cartTotalAmount.setText(QCoreApplication.translate("MainWindow", u"Total", None))
         self.productPrice.setText(QCoreApplication.translate("MainWindow", u"Price", None))
         self.btn_printReceipt.setText(QCoreApplication.translate("MainWindow", u"Print Receipt", None))
+=======
+>>>>>>> 9ffd8686ba914d67b87b9d34bc5bc8ba083f8cc4
         self.textEdit.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>", None))
+        self.quantity.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Quantity", None))
+        self.btn_remove_item_from_cart.setText(QCoreApplication.translate("MainWindow", u"Romove", None))
+        self.prouctSubAmount.setText(QCoreApplication.translate("MainWindow", u"Amount", None))
+        self.cart_notification.setText(QCoreApplication.translate("MainWindow", u"Notification", None))
+        self.cartTotalAmount.setText(QCoreApplication.translate("MainWindow", u"Total", None))
+        self.productPrice.setText(QCoreApplication.translate("MainWindow", u"Price", None))
+        self.btn_printReceipt.setText(QCoreApplication.translate("MainWindow", u"Print", None))
+        self.cartProductName.setText(QCoreApplication.translate("MainWindow", u"Product name", None))
+        ___qtablewidgetitem2 = self.tableWidget_receipt.horizontalHeaderItem(0)
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Product", None));
+        ___qtablewidgetitem3 = self.tableWidget_receipt.horizontalHeaderItem(1)
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Unit Price", None));
+        ___qtablewidgetitem4 = self.tableWidget_receipt.horizontalHeaderItem(2)
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Quantity", None));
+        ___qtablewidgetitem5 = self.tableWidget_receipt.horizontalHeaderItem(3)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"Amount", None));
     # retranslateUi
 
